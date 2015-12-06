@@ -1,0 +1,31 @@
+{
+  "name": "booljs-passport",
+  "version": "0.0.1",
+  "description": "Middleware to connect Passport.js with Bool.js and a RouteMiddleware to authenticate API users through Auth Strategies.",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha --recursive test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/booljs/booljs-passport.git"
+  },
+  "keywords": [
+    "booljs",
+    "passportjs",
+    "auth",
+    "middleware"
+  ],
+  "author": "Pablo Andrés Dorado Suárez <pandres95@booljs.co>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/booljs/booljs-passport/issues"
+  },
+  "homepage": "https://github.com/booljs/booljs-passport#readme",
+  "dependencies": {
+    "passport": "^0.3.2"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  }
+}

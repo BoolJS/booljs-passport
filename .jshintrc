@@ -1,0 +1,12 @@
+{
+    "node": true,
+    "undef": true,
+    "unused": true,
+    "esnext": true,
+    "laxcomma": true,
+    "globals": {
+        "_": true,
+        "q": true,
+        "PATH": true
+    }
+}
