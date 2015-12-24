@@ -1,0 +1,7 @@
+services: mongodb
+language: node_js
+node_js:
+  - 4.0
+install:
+  - npm install
+  - npm install bool.js passport passport-http-bearer
