@@ -1,0 +1,20 @@
+{
+    "node": true,
+    "laxcomma": true,
+    "esnext": true,
+    "undef": true,
+    "strict": true,
+    "unused": true,
+    "globals": {
+        "_": true,
+        "log": true,
+        "Agent": true,
+        "expect": true,
+        "describe": true,
+        "before": true,
+        "beforeEach": true,
+        "it": true,
+        "after": true,
+        "afterEach": true
+    }
+}

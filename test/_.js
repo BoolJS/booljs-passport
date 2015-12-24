@@ -1,9 +1,8 @@
-/* global describe, it */
 'use strict';
 
-describe('Plugin', () => {
+var booljs      = require('bool.js')
+,   resolver    = require('../util/resolver');
 
-    it('Integrity test passes', () => {
-        require('..').checkIntegrity();
-    });
-});
+booljs('com.example.api', [
+    resolver(''), 'passport-http-bearer'
+]).setBase('example').run();
