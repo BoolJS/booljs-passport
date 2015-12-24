@@ -20,16 +20,14 @@ describe('Bearer', () => {
     it(`Unauthenticated request returns 401`, () => {
         return (agent
             .get('/dog')
-            .expect(500)
-        ).then((res) => {
-            log.debug(res.body);
-        });
+            .expect(401)
+        );
     });
 
     it(`Authenticated request returns 200`, () => {
         return (agent
             .get('/dog')
-            .set('Authorization', 'Bearer 12345')
+            .set('Authorization', 'Bearer 123456')
             .expect(200)
         );
     });
