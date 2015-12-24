@@ -22,10 +22,12 @@
     "url": "https://github.com/booljs/booljs-passport/issues"
   },
   "homepage": "https://github.com/booljs/booljs-passport#readme",
-  "dependencies": {
+  "peerDependencies": {
     "passport": "^0.3.2"
   },
   "devDependencies": {
-    "mocha": "^2.3.4"
+    "mocha": "^2.3.4",
+    "supertest": "^1.1.0",
+    "supertest-as-promised": "^2.0.2"
   }
 }
