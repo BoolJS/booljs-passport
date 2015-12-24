@@ -6,3 +6,5 @@ var booljs      = require('bool.js')
 booljs('com.example.api', [
     resolver(''), 'passport-http-bearer'
 ]).setBase('example').run();
+
+global.Agent = require('supertest-as-promised');

@@ -9,7 +9,6 @@ describe('Plugin', () => {
 
 describe('Bearer', () => {
     var booljs  = require('bool.js')
-    ,   Agent   = require('supertest-as-promised')
     ,   agent;
 
     before(() => {
