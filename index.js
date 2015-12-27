@@ -66,7 +66,7 @@ module.exports = new API.Middleware('booljs-passport', {
 
         for(var strategy of strategiesList){
             if(strategies[strategy]){
-                passport.use(strategies[strategy](passport));
+                passport.use(strategy, strategies[strategy](passport));
             }
         }
 
