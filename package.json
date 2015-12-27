@@ -4,7 +4,7 @@
   "description": "Middleware to connect Passport.js with Bool.js and a RouteMiddleware to authenticate API users through Auth Strategies.",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test mocha --recursive test"
+    "test": "NODE_ENV=test mocha --timeout 5000 --recursive test"
   },
   "repository": {
     "type": "git",
