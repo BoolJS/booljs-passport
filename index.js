@@ -15,7 +15,7 @@ new API.RouteMiddleware('booljs-passport-route', {
              configuration.passport && configuration.passport.defaultStrategy
         )
         ,   authOptions     = (
-            route.authentication && route.authentication.strategy
+            route.authentication && route.authentication.options
         ) || (
             configuration.passport && configuration.passport.strategyOptions
         );
