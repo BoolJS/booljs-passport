@@ -1,6 +1,6 @@
 services: mongodb
 language: node_js
-pre_install: npm install -g npm@latest
+before_install: npm install -g npm@latest
 node_js:
   - 4.0
   - 5.0
