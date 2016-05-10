@@ -2,7 +2,7 @@
   "name": "booljs-passport",
   "version": "0.0.3",
   "description": "Middleware to connect Passport.js with Bool.js and a RouteMiddleware to authenticate API users through Auth Strategies.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "NODE_ENV=test mocha --timeout 5000 --recursive test"
   },
@@ -22,10 +22,16 @@
     "url": "https://github.com/booljs/booljs-passport/issues"
   },
   "homepage": "https://github.com/booljs/booljs-passport#readme",
+  "engines": {
+    "node": ">=4.0.0",
+    "npm": ">=3.0.0"
+  },
   "peerDependencies": {
-    "passport": "^0.3.2"
+    "passport": "^0.3.2",
+    "booljs-api": "0.3.x"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
     "mocha": "^2.3.4",
     "supertest": "^1.1.0",
     "supertest-as-promised": "^2.0.2"

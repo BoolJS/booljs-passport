@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Bearer', () => {
+describe('User', () => {
     var booljs  = require('bool.js')
     ,   agent;
 
@@ -12,16 +12,11 @@ describe('Bearer', () => {
 
     it(`Unauthenticated request returns 401`, () => {
         return (agent
-            .get('/dog')
-            .expect(401)
-        );
-    });
-
-    it(`Authenticated request returns 200`, () => {
-        return (agent
-            .get('/dog')
+            .get('/users/me')
             .set('Authorization', 'Bearer 123456')
             .expect(200)
-        );
+        ).then(res => res.body).then(body => {
+            /* jshint -W030 */ expect(body.data).to.exist;
+        });
     });
 });
