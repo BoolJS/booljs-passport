@@ -1,22 +1,18 @@
 'use strict';
 
+const Bool = require('booljs');
+
 describe('User', () => {
-    var booljs  = require('bool.js')
-    ,   agent;
+    let agent;
 
-    before(() => {
-        return booljs('com.example.api').run().then(function (api) {
-            agent = new Agent(api.server);
-        });
+    before(async () => {
+        let api = await new Bool('com.example.api').run();
+        agent = new Agent(api.server);
     });
 
-    it(`Unauthenticated request returns 401`, () => {
-        return (agent
-            .get('/users/me')
-            .set('Authorization', 'Bearer 123456')
-            .expect(200)
-        ).then(res => res.body).then(body => {
-            /* jshint -W030 */ expect(body.data).to.exist;
-        });
-    });
+    it(`Unauthenticated request returns 401`, () => (agent
+        .get('/users/me')
+        .set('Authorization', 'Bearer 123456')
+        .expect(200)
+    ).then(res => res.body).then(body => expect(body.data).to.exist));
 });

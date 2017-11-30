@@ -1,9 +1,6 @@
 'use strict';
 
-describe('Plugin', () => {
-
-    it('Integrity test passes', () => {
-        let Plugin = require('..');
-        new Plugin();
-    });
-});
+describe('Plugin', () => it('Integrity test passes', () => {
+    let Plugin = require('..');
+    return new Plugin();
+}));

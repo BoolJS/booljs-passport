@@ -1,11 +1,14 @@
 'use strict';
 
-var booljs      = require('bool.js')
-,   resolver    = require('../util/resolver');
+const Bool = require('booljs');
+const resolver = require('../util/resolver');
 
-booljs('com.example.api', [
-    resolver(''), 'passport-http-bearer'
-]).setBase('example').run();
+new Bool('com.example.api', [ resolver(''), 'passport-http-bearer' ])
+    .setBase('example')
+    .run();
 
-global.expect = require('chai').expect;
+const chai = require('chai');
+chai.use(require('chai-as-promised'));
+
+global.expect = chai.expect;
 global.Agent = require('supertest-as-promised');
