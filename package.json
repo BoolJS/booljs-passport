@@ -1,5 +1,5 @@
 {
-  "name": "booljs-passport",
+  "name": "booljs.passport",
   "version": "0.2.0",
   "description": "Middleware to connect Passport.js with Bool.js and a RouteMiddleware to authenticate API users through Auth Strategies.",
   "main": "lib/index.js",
