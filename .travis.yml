@@ -1,5 +1,7 @@
 services: mongodb
 language: node_js
+node_js:
+  - lts/*
 install:
   - npm install booljs passport passport-http-bearer
   - npm install
