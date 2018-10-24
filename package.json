@@ -4,7 +4,7 @@
   "description": "Middleware to connect Passport.js with Bool.js and a RouteMiddleware to authenticate API users through Auth Strategies.",
   "main": "lib/index.js",
   "scripts": {
-    "pretest": "eslint **/*.js",
+    "pretest": "eslint \"**/*.js\"",
     "test": "cross-env NODE_ENV=test mocha --exit --timeout 10000 test/_.js test/*"
   },
   "repository": {
@@ -30,7 +30,7 @@
   "peerDependencies": {
     "passport": "^0.4.0",
     "@booljs/api": "0.6.x",
-    "@booljs/express": "^0.6.6"
+    "@booljs/express": "^0.7.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
