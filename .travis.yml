@@ -3,8 +3,8 @@ language: node_js
 node_js:
   - lts/*
 install:
-  - npm install booljs passport passport-http-bearer
   - npm install
+  - npm install booljs @booljs/express passport passport-http-bearer
 
 deploy:
   provider: npm
