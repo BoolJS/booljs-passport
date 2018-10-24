@@ -5,3 +5,11 @@ node_js:
 install:
   - npm install booljs passport passport-http-bearer
   - npm install
+
+deploy:
+  provider: npm
+  email: hola@pablodorado.com
+  api_key: $NPM_API_KEY
+  on:
+    branch: master
+    tags: true
