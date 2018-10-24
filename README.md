@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/BoolJS/booljs-passport.svg?branch=master)](https://travis-ci.org/BoolJS/booljs-passport) [![Dependencies status for booljs-passport](https://david-dm.org/booljs/booljs-passport.svg)](https://david-dm.org/booljs/booljs-passport) [![devDependency Status](https://david-dm.org/booljs/booljs-passport/dev-status.svg)](https://david-dm.org/booljs/booljs-passport#info=devDependencies) [![Code Climate](https://codeclimate.com/github/BoolJS/booljs-passport/badges/gpa.svg)](https://codeclimate.com/github/BoolJS/booljs-passport) [![Inline docs](http://inch-ci.org/github/booljs/booljs-passport.svg?branch=master)](http://inch-ci.org/github/booljs/booljs-passport)
 
-[![booljs-passport NPM icon](https://nodei.co/npm/booljs-passport.png)](https://npmjs.com/packages/booljs-passport)
+[![booljs-passport NPM icon](https://nodei.co/npm/@booljs/passport.png)](https://npmjs.com/package/@booljs/passport)
 
 [![Join the chat at https://gitter.im/BoolJS/booljs-passport](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/BoolJS/booljs-passport?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
