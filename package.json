@@ -29,22 +29,23 @@
   },
   "peerDependencies": {
     "passport": "^0.4.0",
-    "booljs.api": "0.5.x"
+    "@booljs/api": "0.6.x",
+    "@booljs/express": "^0.6.6"
   },
   "devDependencies": {
-    "chai": "^4.1.2",
+    "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
-    "cross-env": "^5.0.1",
-    "eslint": "^4.2.0",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-node": "^5.1.0",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "mocha": "^4.0.1",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.7.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "mocha": "^5.2.0",
     "node-uuid": "^1.4.8",
     "passport-http-bearer": "^1.0.1",
-    "supertest": "^3.0.0",
+    "supertest": "^3.3.0",
     "supertest-as-promised": "^4.0.2"
   }
 }
